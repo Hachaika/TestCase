@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Example</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    {% load menu_tags %}
+    <div class="sidebar">
+        {% draw_menu 'main_menu' %}
+    </div>
+    <div class="content" style="margin-left: 250px; padding: 20px;">
+        <h1>Место для страницы</h1>
+        <p>Информация</p>
+    </div>
+</body>
+</html>
